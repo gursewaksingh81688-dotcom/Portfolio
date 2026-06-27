@@ -1586,3 +1586,30 @@ input, textarea { font-family: inherit; }
     object-fit: cover;
     border-radius: 20px;
 }
+
+
+.skill-items{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:18px;
+}
+
+.skill-chip{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 18px;
+    border:1px solid rgba(88,138,255,.25);
+    border-radius:12px;
+    background:rgba(255,255,255,.03);
+    color:#dfe9ff;
+    font-size:.95rem;
+    transition:.3s ease;
+}
+
+.skill-chip:hover{
+    transform:translateY(-3px);
+    border-color:#6d9dff;
+    box-shadow:0 0 15px rgba(90,140,255,.25);
+}
