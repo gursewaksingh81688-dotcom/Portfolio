@@ -1571,13 +1571,33 @@ input, textarea { font-family: inherit; }
   font-size: 0.72rem;
 }
 
-/* ===== Skills ===== */
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills-layout{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:2rem;
+}
+
+.skill-group{
+    padding:2rem;
+}
+
+.skill-group-title{
+    font-size:1.05rem;
+    margin-bottom:1.2rem;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    color:var(--text);
+}
 
 .skill-items{
     display:flex;
     flex-wrap:wrap;
     gap:12px;
-    margin-top:18px;
 }
 
 .skill-chip{
@@ -1585,22 +1605,24 @@ input, textarea { font-family: inherit; }
     align-items:center;
     justify-content:center;
 
-    padding:8px 16px;
-    min-height:36px;
+    padding:8px 14px;
 
-    background:rgba(95,110,170,.15);
-    border:1px solid rgba(120,150,255,.18);
-    border-radius:10px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.12);
 
-    color:#dfe8ff;
-    font-size:0.9rem;
+    border-radius:999px;
+
+    font-size:.88rem;
     font-weight:500;
 
-    transition:all .25s ease;
+    color:var(--text);
+
+    transition:.25s;
 }
 
 .skill-chip:hover{
-    background:rgba(96,135,255,.25);
-    border-color:#6e8cff;
+    background:rgba(91,124,255,.15);
+    border-color:#5b7cff;
     transform:translateY(-2px);
+    color:white;
 }
