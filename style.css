@@ -80,12 +80,13 @@ input, textarea { font-family: inherit; }
 }
 
 .nav-logo {
-  font-family: var(--garamond);
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 600;
   color: var(--ink);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 .nav-logo:hover { text-decoration: none; color: var(--accent); }
 
@@ -1018,28 +1019,35 @@ input, textarea { font-family: inherit; }
 .scroll-top:hover { background: var(--accent-lt); }
 
 /* =====================================================
-   FADE-IN & REVEAL ANIMATIONS
-   One animation only — clean fade up on scroll.
+   FADE-IN — hero entrance only
    ===================================================== */
-.fade-in {
-  animation: fadeInUp 0.7s ease forwards;
+.hero-inner,
+.hero-meta {
+  animation: fadeInUp 0.6s ease both;
 }
+.hero-meta { animation-delay: 0.15s; }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Reveal-on-scroll (JS adds .visible) */
+/* Reveal-on-scroll (JS adds .visible)
+   IMPORTANT: opacity starts at 0.01 not 0 — this prevents a
+   browser paint quirk where elements fully outside the initial
+   viewport never get the IntersectionObserver callback on some
+   mobile browsers. The JS observer uses threshold:0 so any pixel
+   of the element entering the viewport triggers the reveal. */
 .reveal {
-  opacity: 0;
+  opacity: 0.01;
   transform: translateY(18px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
   transition-delay: var(--delay, 0s);
+  will-change: opacity, transform;
 }
 .reveal.visible {
   opacity: 1;
-  transform: none;
+  transform: translateY(0);
 }
 
 /* =====================================================
