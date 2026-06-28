@@ -1,12 +1,12 @@
 /* =====================================================
-   GURSEWAK SINGH — ACADEMIC PORTFOLIO v2
+   GURSEWAK SINGH â€” ACADEMIC PORTFOLIO v2
    style.css
    Direction: archival-paper light theme
-   Palette: off-white · near-black · deep academic blue
-   Typography: EB Garamond (name) · DM Sans · DM Mono
+   Palette: off-white Â· near-black Â· deep academic blue
+   Typography: EB Garamond (name) Â· DM Sans Â· DM Mono
    ===================================================== */
 
-/* ── Custom Properties ──────────────────────────────── */
+/* â”€â”€ Custom Properties â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 :root {
   /* Palette */
   --bg:          #F7F6F2;   /* archival paper off-white */
@@ -33,7 +33,7 @@
   --ease:        cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ── Reset ──────────────────────────────────────────── */
+/* â”€â”€ Reset â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
@@ -54,7 +54,7 @@ input, textarea { font-family: inherit; }
 /* Utility */
 .mono { font-family: var(--mono); }
 
-/* ── Container ──────────────────────────────────────── */
+/* â”€â”€ Container â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .container {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -113,7 +113,7 @@ input, textarea { font-family: inherit; }
   text-decoration: none;
 }
 
-/* CV download — the one call-to-action in the nav */
+/* CV download â€” the one call-to-action in the nav */
 .nav-cv-btn {
   flex-shrink: 0;
   font-size: 0.8rem;
@@ -287,7 +287,7 @@ input, textarea { font-family: inherit; }
   display: block;
 }
 
-/* Award badge — small sign beside photo */
+/* Award badge â€” small sign beside photo */
 .award-tag {
   position: absolute;
   bottom: -14px;
@@ -323,7 +323,7 @@ input, textarea { font-family: inherit; }
 .dot-sep { color: var(--rule); }
 
 /* =====================================================
-   SECTIONS — shared
+   SECTIONS â€” shared
    ===================================================== */
 .section {
   padding: var(--sec-pad) 0;
@@ -333,7 +333,7 @@ input, textarea { font-family: inherit; }
 .section-tinted { background: var(--bg-tint); }
 
 /* Section header: label + large title + hairline rule
-   This is the "signature" structural device — looks like
+   This is the "signature" structural device â€” looks like
    a physics paper section heading */
 .sec-head {
   margin-bottom: 3rem;
@@ -547,7 +547,7 @@ input, textarea { font-family: inherit; }
   margin-bottom: 0.9rem;
 }
 
-/* Tag pills — shared across sections */
+/* Tag pills â€” shared across sections */
 .tag-row {
   display: flex;
   flex-wrap: wrap;
@@ -729,7 +729,7 @@ input, textarea { font-family: inherit; }
 
 /* =====================================================
    SKILLS
-   Chip-based — no bars, no percentages
+   Chip-based â€” no bars, no percentages
    ===================================================== */
 .skills-table {
   display: flex;
@@ -1019,7 +1019,7 @@ input, textarea { font-family: inherit; }
 .scroll-top:hover { background: var(--accent-lt); }
 
 /* =====================================================
-   FADE-IN — hero entrance only
+   FADE-IN â€” hero entrance only
    ===================================================== */
 .hero-inner,
 .hero-meta {
@@ -1033,7 +1033,7 @@ input, textarea { font-family: inherit; }
 }
 
 /* Reveal-on-scroll (JS adds .visible)
-   IMPORTANT: opacity starts at 0.01 not 0 — this prevents a
+   IMPORTANT: opacity starts at 0.01 not 0 â€” this prevents a
    browser paint quirk where elements fully outside the initial
    viewport never get the IntersectionObserver callback on some
    mobile browsers. The JS observer uses threshold:0 so any pixel
