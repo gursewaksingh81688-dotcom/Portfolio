@@ -1,671 +1,1112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gursewak Singh — Theoretical & Computational Astrophysics</title>
-  <meta name="description" content="Academic portfolio of Gursewak Singh, M.Sc. Physics. Research in dark matter, presolar grains, and computational astrophysics." />
-
-  <!-- Fonts: EB Garamond (display name only) + DM Sans (body) + DM Mono (labels) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- =============================================
-       NAVIGATION
-       ============================================= -->
-  <nav class="navbar" id="navbar">
-    <a href="#home" class="nav-logo">GS</a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about"       class="nav-link">About</a></li>
-      <li><a href="#research"    class="nav-link">Research</a></li>
-      <li><a href="#projects"    class="nav-link">Projects</a></li>
-      <li><a href="#education"   class="nav-link">Education</a></li>
-      <li><a href="#interests"   class="nav-link">Interests</a></li>
-      <li><a href="#skills"      class="nav-link">Skills</a></li>
-      <li><a href="#conferences" class="nav-link">Conferences</a></li>
-      <li><a href="#contact"     class="nav-link">Contact</a></li>
-    </ul>
-
-    <!-- CV download — primary nav action -->
-    <a href="Gursewak_resume.pdf" download class="nav-cv-btn">
-      Download CV
-    </a>
-
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- =============================================
-       HERO
-       ============================================= -->
-  <section class="hero" id="home">
-    <div class="hero-inner fade-in">
-
-      <!-- Left: text -->
-      <div class="hero-text">
-        <span class="hero-eyebrow">M.Sc. Physics · IIT Hyderabad Thesis</span>
-        <h1 class="hero-name">Gursewak<br>Singh</h1>
-        <p class="hero-sub">
-          Theoretical &amp; Computational Astrophysics
-        </p>
-        <p class="hero-desc">
-          I build Monte Carlo simulations to probe dark matter capture in stellar
-          interiors and study the survival of presolar grains through supernova
-          shocks. Seeking a PhD position in particle physics, dark matter, or
-          computational astrophysics.
-        </p>
-        <div class="hero-actions">
-          <a href="Gursewak_resume.pdf" download class="btn-primary">
-            Download CV
-          </a>
-          <a href="mailto:gursewaksingh81688@gmail.com" class="btn-ghost">
-            Get in touch
-          </a>
-        </div>
-        <div class="hero-social">
-          <a href="https://github.com/gursewaksingh81688-dotcom" target="_blank" rel="noopener" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/gursewak-singh-206629188" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="mailto:gursewaksingh81688@gmail.com" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Right: photo -->
-      <div class="hero-photo-wrap">
-        <img src="profile.jpg" alt="Gursewak Singh" class="hero-photo" />
-        <!-- Award badge beside photo -->
-        <div class="award-tag" title="Poster Presenter · 5th METMESS 2025">
-          <i class="fas fa-award"></i>
-          <span>METMESS 2025<br>Poster Presenter</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Location / time line -->
-    <div class="hero-meta fade-in">
-      <span class="mono">Karnal, Haryana, India</span>
-      <span class="dot-sep">·</span>
-      <span class="mono">29.6857° N, 76.9905° E</span>
-      <span class="dot-sep">·</span>
-      <span class="mono" id="liveTime">—</span>
-    </div>
-  </section>
-
-  <!-- =============================================
-       ABOUT
-       ============================================= -->
-  <section class="section" id="about">
-    <div class="container">
-
-      <header class="sec-head reveal">
-        <span class="sec-label mono">Profile</span>
-        <h2 class="sec-title">About Me</h2>
-        <div class="rule"></div>
-      </header>
-
-      <div class="about-body reveal">
-        <p>
-          I am an <strong>M.Sc. Physics graduate</strong> from SVKM's Mithibai College,
-          Mumbai University. My research interests span <strong>particle physics, dark matter
-          physics, computational astrophysics, cosmology, general relativity, and quantum
-          field theory</strong>. I am passionate about using computational methods to
-          investigate fundamental questions about the nature of the Universe.
-        </p>
-        <p>
-          During my Master's thesis at the <strong>Indian Institute of Technology Hyderabad
-          under Dr. Divya Sachdeva</strong>, I developed Python-based Monte Carlo simulations
-          to study the <strong>capture and thermalization of Weakly Interacting Massive
-          Particles (WIMPs)</strong> inside the Sun. My work focused on spin-independent
-          (Operator 1) WIMP–nucleon interactions within the non-relativistic effective field
-          theory (NREFT) framework, including particle trajectories, scattering events, and
-          energy-loss processes using realistic solar models.
-        </p>
-        <p>
-          Previously, I completed a research internship at the <strong>Physical Research
-          Laboratory (PRL), Ahmedabad</strong>, where I developed numerical simulations to
-          investigate the destruction and survival of presolar silicate grains in supernova
-          environments. I aspire to pursue a PhD in particle physics, dark matter physics,
-          or computational astrophysics.
-        </p>
-
-        <!-- Currently box -->
-        <div class="currently-box">
-          <span class="currently-dot"></span>
-          <div>
-            <span class="currently-label mono">Currently</span>
-            <span class="currently-text">Independent research — extending Monte Carlo
-            simulations of dark matter capture and thermalization.</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Stats row -->
-      <div class="stats-row reveal">
-        <div class="stat">
-          <span class="stat-n">2</span>
-          <span class="stat-l mono">Research Positions</span>
-        </div>
-        <div class="stat-div"></div>
-        <div class="stat">
-          <span class="stat-n">1</span>
-          <span class="stat-l mono">Conference Poster</span>
-        </div>
-        <div class="stat-div"></div>
-        <div class="stat">
-          <span class="stat-n">4+</span>
-          <span class="stat-l mono">Schools &amp; Workshops</span>
-        </div>
-        <div class="stat-div"></div>
-        <div class="stat">
-          <span class="stat-n">2</span>
-          <span class="stat-l mono">Python Simulations</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- =============================================
-       RESEARCH EXPERIENCE
-       ============================================= -->
-  <section class="section section-tinted" id="research">
-    <div class="container">
-
-      <header class="sec-head reveal">
-        <span class="sec-label mono">Experience</span>
-        <h2 class="sec-title">Research</h2>
-        <div class="rule"></div>
-      </header>
-
-      <!-- Timeline -->
-      <div class="timeline">
-
-        <article class="tl-item reveal">
-          <div class="tl-left">
-            <span class="tl-date mono">Nov 2025 – Mar 2026</span>
-            <span class="tl-status ongoing mono">Ongoing</span>
-          </div>
-          <div class="tl-connector">
-            <div class="tl-dot"></div>
-            <div class="tl-line"></div>
-          </div>
-          <div class="tl-right">
-            <h3 class="tl-title">Simulation of Dark Matter Capture and Thermalization</h3>
-            <p class="tl-org">Indian Institute of Technology Hyderabad · Under Dr. Divya Sachdeva</p>
-            <p class="tl-body">
-              Developed Python-based Monte Carlo simulations to model the capture and
-              thermalization of WIMPs inside the Sun. Implemented spin-independent
-              (Operator 1) WIMP–nucleon interactions within the NREFT framework.
-              Simulated particle trajectories, scattering events, and energy loss using
-              standard solar models.
-            </p>
-            <div class="tag-row">
-              <span class="tag">Monte Carlo</span>
-              <span class="tag">Python</span>
-              <span class="tag">WIMP Capture</span>
-              <span class="tag">NREFT</span>
-              <span class="tag">Solar Models</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="tl-item reveal">
-          <div class="tl-left">
-            <span class="tl-date mono">May – Jun 2025</span>
-            <span class="tl-status mono">Internship</span>
-          </div>
-          <div class="tl-connector">
-            <div class="tl-dot"></div>
-            <div class="tl-line"></div>
-          </div>
-          <div class="tl-right">
-            <h3 class="tl-title">Destruction Mechanism of Presolar Grains</h3>
-            <p class="tl-org">Physical Research Laboratory (PRL), Ahmedabad</p>
-            <p class="tl-body">
-              Investigated the destruction and survival of presolar silicate grains in
-              extreme astrophysical environments — particularly supernova explosions.
-              Developed Python-based simulations to analyse the effects of grain size,
-              velocity, and temperature on grain survival fractions. Results presented
-              at the 5th METMESS Conference, IIST, 2025.
-            </p>
-            <div class="tag-row">
-              <span class="tag">Presolar Grains</span>
-              <span class="tag">Supernova Physics</span>
-              <span class="tag">Python</span>
-              <span class="tag">Matplotlib</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
-       PROJECTS
-       NOTE: To update GitHub links, edit the
-       PROJECTS object in script.js — each key maps
-       project card id → repository URL.
-       ============================================= -->
-  <section class="section" id="projects">
-    <div class="container">
-
-      <header class="sec-head reveal">
-        <span class="sec-label mono">Code</span>
-        <h2 class="sec-title">Projects</h2>
-        <div class="rule"></div>
-      </header>
-
-      <div class="projects-list">
-
-        <!-- data-project-id matches keys in PROJECTS map in script.js -->
-        <article class="proj-card reveal" data-project-id="wimp-solar-mc" role="button" tabindex="0">
-          <div class="proj-inner">
-            <div class="proj-meta">
-              <span class="proj-num mono">01</span>
-              <span class="proj-field mono">Dark Matter · Monte Carlo</span>
-            </div>
-            <h3 class="proj-title">WIMP-Solar-MC</h3>
-            <p class="proj-desc">
-              Monte Carlo simulation of WIMP capture and thermalization inside the Sun.
-              Models spin-independent WIMP–nucleon scattering (NREFT Operator 1) with
-              realistic solar density and composition profiles.
-            </p>
-            <div class="tag-row">
-              <span class="tag">Python</span>
-              <span class="tag">NumPy</span>
-              <span class="tag">SciPy</span>
-              <span class="tag">NREFT</span>
-            </div>
-          </div>
-          <div class="proj-arrow"><i class="fas fa-arrow-right"></i></div>
-        </article>
-
-        <article class="proj-card reveal" data-project-id="presolar-grain-sim" role="button" tabindex="0">
-          <div class="proj-inner">
-            <div class="proj-meta">
-              <span class="proj-num mono">02</span>
-              <span class="proj-field mono">Astrochemistry · Supernova</span>
-            </div>
-            <h3 class="proj-title">Presolar-Grain-Sim</h3>
-            <p class="proj-desc">
-              Simulation of presolar silicate grain destruction and survival in supernova
-              shock environments. Studies the effects of grain size, velocity, and
-              post-shock temperature on survival fractions.
-            </p>
-            <div class="tag-row">
-              <span class="tag">Python</span>
-              <span class="tag">Matplotlib</span>
-              <span class="tag">Grain Physics</span>
-            </div>
-          </div>
-          <div class="proj-arrow"><i class="fas fa-arrow-right"></i></div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
-       EDUCATION
-       ============================================= -->
-  <section class="section section-tinted" id="education">
-    <div class="container">
-
-      <header class="sec-head reveal">
-        <span class="sec-label mono">Academic Record</span>
-        <h2 class="sec-title">Education</h2>
-        <div class="rule"></div>
-      </header>
-
-      <div class="edu-list">
-
-        <article class="edu-item reveal">
-          <div class="edu-year mono">2024 – 2026</div>
-          <div class="edu-body">
-            <h3 class="edu-degree">M.Sc. Physics</h3>
-            <p class="edu-school">SVKM's Mithibai College, Mumbai University — Mumbai, Maharashtra</p>
-            <p class="edu-score mono">CGPA 7.76 / 10</p>
-          </div>
-        </article>
-
-        <div class="edu-rule"></div>
-
-        <article class="edu-item reveal">
-          <div class="edu-year mono">2020 – 2024</div>
-          <div class="edu-body">
-            <h3 class="edu-degree">B.Sc. Physics, Chemistry, Mathematics</h3>
-            <p class="edu-school">Pt. CLS Government College, Kurukshetra University — Karnal, Haryana</p>
-            <p class="edu-score mono">2022 / 2900</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
-       RESEARCH INTERESTS
-       ============================================= -->
-  <section class="section" id="interests">
-    <div class="container">
-
-      <header class="sec-head reveal">
-        <span class="sec-label mono">Focus Areas</span>
-        <h2 class="sec-title">Research Interests</h2>
-        <div class="rule"></div>
-      </header>
-
-      <div class="interests-grid">
-
-        <div class="interest-item reveal">
-          <span class="interest-num mono">I</span>
-          <div>
-            <h3 class="interest-title">Dark Matter &amp; WIMPs</h3>
-            <p>Monte Carlo modelling of WIMP capture, thermalization, and scattering
-               cross-sections in solar interiors and underground detection experiments.</p>
-          </div>
-        </div>
-
-        <div class="interest-item reveal">
-          <span class="interest-num mono">II</span>
-          <div>
-            <h3 class="interest-title">Cosmology</h3>
-            <p>Large-scale structure of the universe, cosmic microwave background,
-               and the dynamics of the dark sector.</p>
-          </div>
-        </div>
-
-        <div class="interest-item reveal">
-          <span class="interest-num mono">III</span>
-          <div>
-            <h3 class="interest-title">General Relativity</h3>
-            <p>Spacetime geometry, geodesic motion of particles, and strong-field
-               effects around compact objects.</p>
-          </div>
-        </div>
-
-        <div class="interest-item reveal">
-          <span class="interest-num mono">IV</span>
-          <div>
-            <h3 class="interest-title">Quantum Field Theory</h3>
-            <p>Particle physics foundations relevant to dark matter candidates,
-               effective field theories (NREFT), and beyond-Standard-Model physics.</p>
-          </div>
-        </div>
-
-        <div class="interest-item reveal">
-          <span class="interest-num mono">V</span>
-          <div>
-            <h3 class="interest-title">Computational Physics</h3>
-            <p>Numerical methods, Monte Carlo techniques, and Python-based simulations
-               for astrophysical problems.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
-       SKILLS
-       (chip layout — no percentage bars)
-       ============================================= -->
-  <section class="section section-tinted" id="skills">
-    <div class="container">
-
-      <header class="sec-head reveal">
-        <span class="sec-label mono">Toolkit</span>
-        <h2 class="sec-title">Skills</h2>
-        <div class="rule"></div>
-      </header>
-
-      <div class="skills-table">
-
-        <div class="skills-row reveal">
-          <span class="skills-cat mono">Programming &amp; Libraries</span>
-          <div class="skills-chips">
-            <span class="chip">Python</span>
-            <span class="chip">NumPy</span>
-            <span class="chip">SciPy</span>
-            <span class="chip">Matplotlib</span>
-          </div>
-        </div>
-
-        <div class="skills-row reveal">
-          <span class="skills-cat mono">Scientific Computing</span>
-          <div class="skills-chips">
-            <span class="chip">LaTeX</span>
-            <span class="chip">Mathematica</span>
-            <span class="chip">Git</span>
-            <span class="chip">GitHub</span>
-            <span class="chip">Linux</span>
-            <span class="chip">Excel</span>
-          </div>
-        </div>
-
-        <div class="skills-row reveal">
-          <span class="skills-cat mono">Languages</span>
-          <div class="skills-chips">
-            <span class="chip">Punjabi <em>native</em></span>
-            <span class="chip">English <em>professional</em></span>
-            <span class="chip">Hindi <em>fluent</em></span>
-          </div>
-        </div>
-
-        <div class="skills-row reveal">
-          <span class="skills-cat mono">Other</span>
-          <div class="skills-chips">
-            <span class="chip">Graphic Design</span>
-            <span class="chip">2D Animation</span>
-            <span class="chip">Frame-by-Frame</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
-       CONFERENCES & WORKSHOPS
-       ============================================= -->
-  <section class="section" id="conferences">
-    <div class="container">
-
-      <header class="sec-head reveal">
-        <span class="sec-label mono">Community</span>
-        <h2 class="sec-title">Conferences &amp; Workshops</h2>
-        <div class="rule"></div>
-      </header>
-
-      <div class="events-list">
-
-        <article class="event-item reveal">
-          <div class="event-left">
-            <span class="event-year mono">2025</span>
-            <span class="event-type-badge conference mono">Conference</span>
-          </div>
-          <div class="event-body">
-            <h3 class="event-title">Destruction of Silicate Grains — Poster Presentation</h3>
-            <p class="event-venue">5th METMESS Conference · IIST, Thiruvananthapuram</p>
-            <p class="event-desc">
-              Presented simulation results on the survival of presolar silicate grains
-              in supernova shock environments to an international audience of
-              meteoriticists and astrophysicists.
-            </p>
-          </div>
-        </article>
-
-        <article class="event-item reveal">
-          <div class="event-left">
-            <span class="event-year mono">May 2025</span>
-            <span class="event-type-badge workshop mono">Workshop</span>
-          </div>
-          <div class="event-body">
-            <h3 class="event-title">Gravitational Wave Open Data Workshop</h3>
-            <p class="event-venue">Online / International</p>
-            <p class="event-desc">
-              Hands-on gravitational-wave data analysis using Python; signal processing,
-              matched filtering, and parameter estimation with LIGO open datasets.
-            </p>
-          </div>
-        </article>
-
-        <article class="event-item reveal">
-          <div class="event-left">
-            <span class="event-year mono">Feb 2025</span>
-            <span class="event-type-badge school mono">Winter School</span>
-          </div>
-          <div class="event-body">
-            <h3 class="event-title">Winter School in Observational Astronomy</h3>
-            <p class="event-venue">National Astronomical Observatory of Japan (NAOJ)</p>
-            <p class="event-desc">
-              Lectures covering stellar evolution, galaxy formation, and time-domain
-              astronomy.
-            </p>
-          </div>
-        </article>
-
-        <article class="event-item reveal">
-          <div class="event-left">
-            <span class="event-year mono">Dec 2024</span>
-            <span class="event-type-badge school mono">Winter School</span>
-          </div>
-          <div class="event-body">
-            <h3 class="event-title">Physics of Life — Entropy &amp; Astrobiology</h3>
-            <p class="event-venue">IISER Berhampur</p>
-            <p class="event-desc">
-              Interdisciplinary school exploring entropy, thermodynamics of living
-              systems, and the physical conditions necessary for the emergence of life.
-            </p>
-          </div>
-        </article>
-
-        <article class="event-item reveal">
-          <div class="event-left">
-            <span class="event-year mono">Self-paced</span>
-            <span class="event-type-badge mooc mono">Online Course</span>
-          </div>
-          <div class="event-body">
-            <h3 class="event-title">Data-Driven Astronomy</h3>
-            <p class="event-venue">Coursera</p>
-            <p class="event-desc">
-              Applied Python to explore large astronomical datasets; SQL queries on
-              catalogs, cross-matching, and machine learning classification.
-            </p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
-       CONTACT
-       ============================================= -->
-  <section class="section section-tinted" id="contact">
-    <div class="container">
-
-      <header class="sec-head reveal">
-        <span class="sec-label mono">Connect</span>
-        <h2 class="sec-title">Get In Touch</h2>
-        <div class="rule"></div>
-      </header>
-
-      <div class="contact-layout">
-
-        <!-- Left: info -->
-        <div class="contact-info reveal">
-          <p class="contact-lead">
-            I am open to PhD enquiries, research collaborations, and academic
-            discussions. Please reach out — I respond within a day or two.
-          </p>
-
-          <ul class="contact-list">
-            <li>
-              <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-              <a href="mailto:gursewaksingh81688@gmail.com">gursewaksingh81688@gmail.com</a>
-            </li>
-            <li>
-              <span class="contact-icon"><i class="fas fa-phone"></i></span>
-              <a href="tel:+917206706769">+91 72067 06769</a>
-            </li>
-            <li>
-              <span class="contact-icon"><i class="fab fa-github"></i></span>
-              <a href="https://github.com/gursewaksingh81688-dotcom" target="_blank" rel="noopener">
-                github.com/gursewaksingh81688-dotcom
-              </a>
-            </li>
-            <li>
-              <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
-              <a href="https://linkedin.com/in/gursewak-singh-206629188" target="_blank" rel="noopener">
-                linkedin.com/in/gursewak-singh-206629188
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Right: form -->
-        <div class="contact-form-wrap reveal">
-          <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
-            <div class="form-field">
-              <label for="cName" class="mono">Name</label>
-              <input type="text" id="cName" placeholder="Your name" required />
-            </div>
-            <div class="form-field">
-              <label for="cEmail" class="mono">Email</label>
-              <input type="email" id="cEmail" placeholder="your@email.com" required />
-            </div>
-            <div class="form-field">
-              <label for="cMsg" class="mono">Message</label>
-              <textarea id="cMsg" rows="5" placeholder="Your message…" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary form-submit">Send Message</button>
-            <p class="form-note" id="formNote"></p>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =============================================
-       FOOTER
-       ============================================= -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span class="footer-name mono">Gursewak Singh</span>
-      <span class="footer-line mono">Probing the dark universe, one simulation at a time.</span>
-      <div class="footer-links">
-        <a href="mailto:gursewaksingh81688@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/gursewaksingh81688-dotcom" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/gursewak-singh-206629188" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <p class="footer-copy mono">&copy; <span id="footerYear"></span> Gursewak Singh</p>
-    </div>
-  </footer>
-
-  <!-- Scroll to top -->
-  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <script src="script.js"></script>
-</body>
-</html>
+/* =====================================================
+   GURSEWAK SINGH — ACADEMIC PORTFOLIO v2
+   style.css
+   Direction: archival-paper light theme
+   Palette: off-white · near-black · deep academic blue
+   Typography: EB Garamond (name) · DM Sans · DM Mono
+   ===================================================== */
+
+/* ── Custom Properties ──────────────────────────────── */
+:root {
+  /* Palette */
+  --bg:          #F7F6F2;   /* archival paper off-white */
+  --bg-tint:     #F0EFE9;   /* slightly warmer tinted sections */
+  --ink:         #111318;   /* near-black */
+  --ink-2:       #3D4148;   /* secondary text */
+  --ink-3:       #6B717A;   /* muted / captions */
+  --accent:      #1A3A6B;   /* deep physics blue */
+  --accent-lt:   #2E5CB8;   /* lighter accent for links */
+  --rule:        #D8D6CF;   /* hairline rules */
+  --tag-bg:      #E8E6DF;   /* pill tags */
+
+  /* Type */
+  --garamond:    'EB Garamond', Georgia, serif;
+  --sans:        'DM Sans', system-ui, sans-serif;
+  --mono:        'DM Mono', 'Courier New', monospace;
+
+  /* Spacing */
+  --nav-h:       64px;
+  --max-w:       1080px;
+  --sec-pad:     6rem;
+
+  /* Transitions */
+  --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Reset ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+a  { color: var(--accent-lt); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { display: block; max-width: 100%; }
+ul  { list-style: none; }
+button { cursor: pointer; font-family: inherit; }
+input, textarea { font-family: inherit; }
+
+/* Utility */
+.mono { font-family: var(--mono); }
+
+/* ── Container ──────────────────────────────────────── */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2.5rem;
+  background: rgba(247, 246, 242, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.nav-logo {
+  font-family: var(--garamond);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+.nav-logo:hover { text-decoration: none; color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink-3);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent);
+  background: rgba(26, 58, 107, 0.07);
+  text-decoration: none;
+}
+
+/* CV download — the one call-to-action in the nav */
+.nav-cv-btn {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--accent);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-cv-btn:hover {
+  background: var(--accent-lt);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-left: auto;
+}
+.hamburger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--ink-2);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.2s;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* =====================================================
+   HERO
+   ===================================================== */
+.hero {
+  padding-top: calc(var(--nav-h) + 4rem);
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left text block */
+.hero-eyebrow {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hero-name {
+  font-family: var(--garamond);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;         /* Garamond is elegant at regular weight */
+  line-height: 1.08;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  letter-spacing: 0.01em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-desc {
+  max-width: 520px;
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.65rem 1.4rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background: var(--accent-lt);
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: transparent;
+  padding: 0.65rem 1.4rem;
+  border-radius: 4px;
+  border: 1.5px solid var(--accent);
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+.btn-ghost:hover {
+  background: rgba(26, 58, 107, 0.06);
+  text-decoration: none;
+  color: var(--accent);
+}
+
+/* Social icons row */
+.hero-social {
+  display: flex;
+  gap: 1rem;
+}
+.hero-social a {
+  color: var(--ink-3);
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.hero-social a:hover { color: var(--accent); }
+
+/* Right: photo + award tag */
+.hero-photo-wrap {
+  position: relative;
+  align-self: start;
+}
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  border: 1px solid var(--rule);
+  display: block;
+}
+
+/* Award badge — small sign beside photo */
+.award-tag {
+  position: absolute;
+  bottom: -14px;
+  right: -14px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.55rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  line-height: 1.4;
+  box-shadow: 0 4px 16px rgba(26, 58, 107, 0.25);
+  cursor: default;
+  border: 2px solid #fff;
+}
+.award-tag i { font-size: 0.95rem; flex-shrink: 0; }
+
+/* Hero meta line */
+.hero-meta {
+  max-width: var(--max-w);
+  margin: 2.5rem auto 0;
+  padding: 0 2rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}
+.dot-sep { color: var(--rule); }
+
+/* =====================================================
+   SECTIONS — shared
+   ===================================================== */
+.section {
+  padding: var(--sec-pad) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.section-tinted { background: var(--bg-tint); }
+
+/* Section header: label + large title + hairline rule
+   This is the "signature" structural device — looks like
+   a physics paper section heading */
+.sec-head {
+  margin-bottom: 3rem;
+}
+
+.sec-label {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--accent);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.sec-title {
+  font-family: var(--garamond);
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.rule {
+  height: 1px;
+  background: var(--rule);
+}
+
+/* =====================================================
+   ABOUT
+   ===================================================== */
+.about-body {
+  max-width: 760px;
+  margin-bottom: 2.5rem;
+}
+
+.about-body p {
+  color: var(--ink-2);
+  margin-bottom: 1.1rem;
+}
+
+.about-body strong { color: var(--ink); font-weight: 600; }
+
+/* Currently box */
+.currently-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  background: rgba(26, 58, 107, 0.03);
+}
+
+.currently-dot {
+  flex-shrink: 0;
+  margin-top: 4px;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { opacity:1; }
+  50%      { opacity:0.35; }
+}
+
+.currently-label {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.currently-text {
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+
+/* Stats row */
+.stats-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--rule);
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.5rem 1.5rem 0.5rem 0;
+}
+
+.stat-n {
+  display: block;
+  font-family: var(--garamond);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.stat-l {
+  font-size: 0.67rem;
+  color: var(--ink-3);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.stat-div {
+  width: 1px;
+  height: 40px;
+  background: var(--rule);
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+}
+
+/* =====================================================
+   RESEARCH TIMELINE
+   ===================================================== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 160px 28px 1fr;
+  gap: 0 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.tl-left {
+  text-align: right;
+  padding-top: 2px;
+}
+
+.tl-date {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  margin-bottom: 0.35rem;
+}
+
+.tl-status {
+  display: inline-block;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 50px;
+  border: 1px solid var(--rule);
+  color: var(--ink-3);
+}
+
+.tl-status.ongoing {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(26,58,107,0.05);
+}
+
+.tl-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tl-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.tl-line {
+  flex: 1;
+  width: 1px;
+  background: var(--rule);
+  margin-top: 6px;
+}
+
+.tl-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.tl-org {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.tl-body {
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  line-height: 1.75;
+  margin-bottom: 0.9rem;
+}
+
+/* Tag pills — shared across sections */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--ink-3);
+  background: var(--tag-bg);
+  border: 1px solid var(--rule);
+  border-radius: 50px;
+  padding: 0.2rem 0.6rem;
+}
+
+/* =====================================================
+   PROJECTS
+   ===================================================== */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Each project card is a full-width clickable row */
+.proj-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--rule);
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 4px;
+}
+
+.proj-card:first-child { border-top: 1px solid var(--rule); }
+
+.proj-card:hover {
+  background: rgba(26, 58, 107, 0.03);
+  padding-left: 1rem;
+}
+
+.proj-card:hover .proj-arrow { transform: translateX(4px); }
+
+.proj-inner { flex: 1; }
+
+.proj-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.proj-num {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  letter-spacing: 0.06em;
+}
+
+.proj-field {
+  font-size: 0.68rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.proj-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.proj-card:hover .proj-title { color: var(--accent); }
+
+.proj-desc {
+  font-size: 0.88rem;
+  color: var(--ink-2);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+  max-width: 680px;
+}
+
+.proj-arrow {
+  color: var(--accent);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: transform 0.2s var(--ease);
+}
+
+/* =====================================================
+   EDUCATION
+   ===================================================== */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.edu-rule {
+  height: 1px;
+  background: var(--rule);
+}
+
+.edu-year {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  padding-top: 4px;
+}
+
+.edu-degree {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.edu-school {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  margin-bottom: 0.5rem;
+}
+
+.edu-score {
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+/* =====================================================
+   RESEARCH INTERESTS
+   ===================================================== */
+.interests-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.interest-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.interest-item:first-child { border-top: 1px solid var(--rule); }
+
+.interest-num {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  min-width: 30px;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+
+.interest-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+
+.interest-item p {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  line-height: 1.7;
+}
+
+/* =====================================================
+   SKILLS
+   Chip-based — no bars, no percentages
+   ===================================================== */
+.skills-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.skills-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.skills-row:first-child { border-top: 1px solid var(--rule); }
+
+.skills-cat {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: 4px;
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  background: var(--tag-bg);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+}
+
+.chip em {
+  font-style: normal;
+  color: var(--ink-3);
+  font-size: 0.7rem;
+}
+
+/* =====================================================
+   CONFERENCES & WORKSHOPS
+   ===================================================== */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.event-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.event-item:first-child { border-top: 1px solid var(--rule); }
+
+.event-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 2px;
+}
+
+.event-year {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}
+
+/* Type badges */
+.event-type-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 50px;
+  border: 1px solid;
+}
+
+.event-type-badge.conference { color: #1A3A6B; border-color: #1A3A6B; background: rgba(26,58,107,0.06); }
+.event-type-badge.workshop   { color: #166534; border-color: #166534; background: rgba(22,101,52,0.06); }
+.event-type-badge.school     { color: #92400E; border-color: #92400E; background: rgba(146,64,14,0.06); }
+.event-type-badge.mooc       { color: #5B21B6; border-color: #5B21B6; background: rgba(91,33,182,0.06); }
+
+.event-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.event-venue {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.event-desc {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  line-height: 1.7;
+}
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-lead {
+  font-size: 0.95rem;
+  color: var(--ink-2);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+
+.contact-icon {
+  width: 32px; height: 32px;
+  border-radius: 4px;
+  background: rgba(26,58,107,0.07);
+  border: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.contact-list a {
+  color: var(--ink-2);
+  transition: color 0.2s;
+}
+.contact-list a:hover { color: var(--accent); }
+
+/* Form */
+.form-field {
+  margin-bottom: 1.1rem;
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--ink-3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.875rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(26,58,107,0.08);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--ink-3);
+}
+
+.form-submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.25rem;
+}
+
+.form-note {
+  font-size: 0.8rem;
+  color: var(--ink-3);
+  margin-top: 0.75rem;
+  text-align: center;
+  min-height: 1.2rem;
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+.footer {
+  padding: 2.5rem 0;
+  background: var(--bg-tint);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 2rem;
+}
+
+.footer-name {
+  font-size: 0.8rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.footer-line {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  flex: 1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+.footer-links a {
+  color: var(--ink-3);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--accent); }
+
+.footer-copy {
+  font-size: 0.68rem;
+  color: var(--ink-3);
+  width: 100%;
+}
+
+/* =====================================================
+   SCROLL-TO-TOP
+   ===================================================== */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  width: 40px; height: 40px;
+  border-radius: 4px;
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s, visibility 0.25s, background 0.2s;
+  box-shadow: 0 2px 12px rgba(26,58,107,0.25);
+}
+.scroll-top.visible { opacity: 1; visibility: visible; }
+.scroll-top:hover { background: var(--accent-lt); }
+
+/* =====================================================
+   FADE-IN & REVEAL ANIMATIONS
+   One animation only — clean fade up on scroll.
+   ===================================================== */
+.fade-in {
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Reveal-on-scroll (JS adds .visible) */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+  transition-delay: var(--delay, 0s);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+@media (max-width: 860px) {
+  :root { --sec-pad: 4rem; }
+
+  /* Nav */
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    background: rgba(247, 246, 242, 0.98);
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 1px solid var(--rule);
+    padding: 1rem 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-link { padding: 0.75rem 2rem; font-size: 0.9rem; }
+  .nav-cv-btn { display: none; }
+  .hamburger { display: flex; }
+
+  /* Hero */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .hero-photo-wrap { max-width: 220px; }
+  .award-tag { font-size: 0.58rem; padding: 0.4rem 0.65rem; }
+
+  /* Timeline */
+  .tl-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .tl-left { text-align: left; display: flex; gap: 0.75rem; align-items: center; }
+  .tl-connector { display: none; }
+
+  /* Skills */
+  .skills-row { grid-template-columns: 1fr; gap: 0.75rem; }
+
+  /* Events */
+  .event-item { grid-template-columns: 1fr; gap: 0.5rem; }
+  .event-left { flex-direction: row; gap: 0.75rem; align-items: center; }
+
+  /* Education */
+  .edu-item { grid-template-columns: 1fr; gap: 0.35rem; }
+
+  /* Contact */
+  .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 540px) {
+  .container { padding: 0 1.25rem; }
+  .hero-inner { padding: 0 1.25rem; }
+  .hero-meta  { padding: 0 1.25rem; }
+  .stats-row  { flex-direction: column; gap: 1.25rem; }
+  .stat-div   { display: none; }
+}
+
+/* Honour prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
